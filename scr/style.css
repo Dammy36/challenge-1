@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(592px at 48.2% 50%,
+            rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
+}
+
+.weather-app {
+    border: 3px solid #dadde1;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10;
+    max-width: 800px;
+}
+
+.footer {
+    margin: 20px auto;
+    max-width: 800px
+}
+
+button {
+    background: #a2a8d3;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 200ms ease;
+    box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+    cursor: pointer;
+}
+
+.card-body {
+    display: inline;
+    background: #a2a8d3;
+    color: white;
+    box-shadow: none;
+    padding: 10px
+}
