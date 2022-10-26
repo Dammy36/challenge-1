@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <br />
+            <button class="Ikeja" type="button">Ikeja</button>
+            <button class="Agege" type="button">Agege</button>
+            <button class="Lagos" type="button">Lagos</button>
+            <button class="Abuja" type="button">Abuja</button>
+
+            <h3>
+                <form id="select-form">
+                    <input type="text" placeholder=" Enter a city" autocomplete="off" autofocus="on" id="text-input" />
+                    <input type="submit" value="Search" />
+                    <input id="current" type="button" value="Current" />
+
+                </form>
+            </h3>
+
+            <div class="row">
+                <div class="col">
+                    <h1>
+
+                    </h1>
+                    <h2>
+                        <p class="desc" id="desc"></p>
+                        <p id="current-date"></p>
+                        <img src="suncloud.jpg" alt="" width="100" />
+                        <strong id="current-tempareture"> </strong>
+                        <small>
+                            <a href="#" id="celsius-link">°C </a>
+                            <a href="#" id="fahrenheit-link">/°F</a>
+                        </small>
+                    </h2>
+                </div>
+                <div class="col">
+                    <h2 id="preview">
+                        Humidity:<span id="humidity"></span>
+                        <br />
+                        Wind <span id="wind"></span>km/h
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sun</h5>
+                            <p class="card-text">22°c</p>
+                            <p>
+                                <img src="image.jpg" alt="" width="40" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mon</h5>
+                            <p class="card-text">20°c</p>
+                            <p>
+                                <img src="images (1).jpg" alt="" width="40" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tue</h5>
+                            <p class="card-text">21°c</p>
+                            <p>
+                                <img src="suncloud.jpg" alt="" width="40" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Wed</h5>
+                            <p class="card-text">24°c</p>
+                            <p>
+                                <img src="images (3).jpg" alt="" width="40" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Thu</h5>
+                            <p class="card-text">28°c</p>
+                            <p>
+                                <img src="image.jpg" alt="" width="40" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <small id="repository">
+                <a href="https://github.com/Dammy36/weather-app" target="_blank">Open-source code</a>
+                <span>by Oseyemi Damilola</span>
+            </small>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
